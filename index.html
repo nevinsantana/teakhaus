@@ -6,8 +6,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-
 	<link rel="stylesheet" href="assets/custom.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/53fe6c0cab.js" crossorigin="anonymous"></script>
 
 	<title>Teakhaus | About</title>
 </head>
@@ -15,10 +17,33 @@
 <body>
 
 	<header>
-		<nav>
-			<ul>
-				<li>Your menu</li>
-			</ul>
+		<nav class="navbar navbar-expand-lg navbar-light py-lg-5 py-4">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse px-lg-5" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto">
+						<li class="nav-item mx-lg-3 mx-2 text-center">
+							<a class="nav-link active" aria-current="page" href="#">ABOUT ARTERY</a>
+						</li>
+						<li class="nav-item mx-lg-3 mx-2 text-center">
+							<a class="nav-link" href="#">SHOP NOW</a>
+						</li>
+						<li class="nav-item mx-lg-3 mx-2 text-center">
+							<a class="nav-link" href="#">TEAKHAUS</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav col-auto">
+						<li class="nav-item mx-lg-3 mx-2 text-center">
+							<a class="nav-link" href="#">
+								<i class="far fa-user"></i>
+								ACCOUNT
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 	</header>
 
@@ -51,7 +76,13 @@
 		<p>Copyright 2009 Your name</p>
 	</footer>
 
+
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+	<script>
+		var vari = $("nav").attr('class');
+		console.log(vari);
+	</script>
 </body>
 
 </html>

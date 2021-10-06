@@ -1,3 +1,17 @@
-* {
-	background: white;
+:root {
+	--color-beige: #e8e1cf;
+	--color-green: #2f5e32;
+}
+
+nav {
+	background-color: var(--color-beige);
+}
+
+nav .navbar-nav .nav-link {
+	transition: 0.2s;
+}
+
+nav .navbar-nav .nav-link.active, nav .navbar-nav .nav-link:hover {
+    color: var(--color-green) !important;
+    text-shadow: -0.3px -0.3px 0px var(--color-green);
 }
