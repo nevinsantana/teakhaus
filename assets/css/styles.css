@@ -1,0 +1,260 @@
+@font-face {
+  font-family: cyrene;
+  src: url('../fonts/cyrene.otf');
+}
+@font-face {
+  font-family: macklinSansRegular;
+  src: url('../fonts/MacklinSans-Regular.ttf');
+}
+html, body, h1, h2, h3, h4, h5, h6, p, button, a, i, span {
+	color: #444242;
+	font-family: cyrene;
+}
+.macklin-sans-regular {
+	font-family: macklinSansRegular;
+}
+
+/*Navbar*/
+
+.navbar-collapse.show {
+	background-color: #ffffff;
+}
+
+/*Main Slider*/
+.carousel-control-next,
+.carousel-control-prev {
+    width: 4%;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #c2c3c9;
+}
+.carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
+    filter: invert(.3) grayscale(100);
+}
+
+/*Carousel Caption*/
+.carousel-caption {
+    color: white;
+    text-align: center;
+    top: 1px;
+  	top: 52%; 
+  	xbottom: initial;
+  	padding:10px;
+  	height:100%;
+  	overflow: hidden;
+}
+.carousel-caption img {
+	width: 350px;
+	max-width: 100%;
+	margin-bottom: 25px;
+}
+@media (min-width: 760px){
+	.carousel-caption {
+	  	top: 58%;
+	}
+	.carousel-caption img {
+		max-width: 350px;
+		margin-bottom: 0px;
+	}
+}
+@media (min-width: 1025px){
+	.carousel-caption {
+	    xright: 58%;
+	    max-width: 50%;
+	    left: 0;
+	  	top: 45%;
+  		xtransform: translateY(-50%);
+	}
+	.carousel-caption img {
+		max-width: 65%;
+	}
+}
+
+/*Button Efect*/
+.teakhaus-button-slider {
+    color: #ffffff;
+    position: relative;
+    margin: 10px auto;
+    border: 1px solid transparent;
+    z-index: 10;
+    background-color: transparent;
+    transition: color .45s cubic-bezier(.785, .135, .15, .86),border .45s cubic-bezier(.785, .135, .15, .86);
+    display: inline-block;
+    padding: 14px 28px;
+    line-height: normal;
+    border-radius: 0!important;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .2em;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-tap-highlight-color: initial;
+    -webkit-appearance: button;
+    cursor: pointer;
+    overflow: visible;
+    background: 0 0;
+    text-decoration: none;
+}
+.teakhaus-button-slider:hover::before {
+    transform-origin: right center;
+    transform: scale(0,1);
+}
+.teakhaus-button-slider::before {
+    transition: transform .45s cubic-bezier(.785, .135, .15, .86);
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(1,1);
+    transform-origin: left center;
+    z-index: -1;
+}
+/*Veige*/
+.teakhaus-button-slider-veige {
+   border-color: #a09587;
+}
+.teakhaus-button-slider-veige:hover {
+    color: #a09587;
+}
+.teakhaus-button-slider-veige::before {
+    background-color: #a09587;
+}
+/*Green*/
+.teakhaus-button-slider-green {
+   border-color: #445d38;
+}
+.teakhaus-button-slider-green:hover {
+    color: #445d38;
+}
+.teakhaus-button-slider-green::before {
+    background-color: #445d38;
+}
+
+/*Key Words*/
+.teak-key-word {
+	color: #ba7b55;
+}
+
+/*Image Section*/
+.image-section {
+	background-color: #f7f7f8;
+}
+.image-section-caption {
+	margin-bottom: 15%;
+  	padding: 0 10% 0 10%;
+	text-align: center;
+}
+.image-section-caption * {
+}
+@media (min-width: 768px){
+	.image-section-caption {
+	  	margin-top: 5%;
+		margin-bottom: 0;
+  		padding: 0 5% 0 20%;
+		text-align: left;
+	}
+}
+@media (min-width: 992px){
+	.image-section-caption {
+	  	margin-top: 15%;
+  		padding: 0 5% 0 20%;
+	}
+}
+@media (min-width: 1200px){
+	.image-section-caption {
+	  	margin-top: 25%;
+  		padding: 0 5% 0 20%;
+	}
+}
+.image-section-caption a {
+	color: #000000;
+}
+
+/*Grid images*/
+.grid-images-container {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 4px;
+}
+
+/* Create three equal columns that sits next to each other */
+.column-grid-images {
+		flex: 33.33%;
+		max-width: 33.33%;
+		padding: 0 4px;
+}
+
+.column-grid-images img {
+		margin-top: 8px;
+		vertical-align: middle;
+		width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+		.column-grid-images {
+		flex: 33.33%;
+		max-width: 33.33%;
+		}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+		.column-grid-images {
+		flex: 100%;
+		max-width: 100%;
+		}
+}
+
+/*Social Networks*/
+.social-networks a {
+	margin: 0px 15px;
+	color: #000000;
+}
+
+/*Footer*/
+footer {
+	background-color: #e6e0d0;
+	overflow: hidden;
+}
+
+/*Utilities*/
+/*MD*/
+@media (max-width: 767px){
+	.d-md {
+	    display: none !important;
+	}
+}
+@media (min-width: 768px){
+	.h-md {
+	    display: none !important;
+	}
+}
+/*XL*/
+@media (max-width: 1288px){
+	.d-xxl {
+	    display: none !important;
+	}
+}
+@media (min-width: 1289px){
+	.h-xxl {
+	    display: none !important;
+	}
+}
+
+/*Specific 600*/
+@media (max-width: 599px){
+	.d-600 {
+	    display: none !important;
+	}
+}
+@media (min-width: 600px){
+	.h-600 {
+	    display: none !important;
+	}
+}
