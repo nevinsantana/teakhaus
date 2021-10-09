@@ -15,12 +15,52 @@ html, body, h1, h2, h3, h4, h5, h6, p, button, a, i, span {
 }
 
 /*Navbar*/
-
+.navbar {
+	background-color: transparent;
+}
+.navbar-bg-color {
+	background-color: #ffffff;
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+	color: #444242;
+}
 .navbar-collapse.show {
 	background-color: #ffffff;
 }
 
 /*Main Slider*/
+.banner-slide-01 {
+	background-image: url('../images/main-slider/banner01-sm.jpg');
+}
+.banner-slide-02 {
+	background-image: url('../images/main-slider/banner02-sm.jpg');
+}
+@media (min-width: 760px){
+	.banner-slide-01 {
+		background-image: url('../images/main-slider/banner01-md.jpg');
+	}
+	.banner-slide-02 {
+		background-image: url('../images/main-slider/banner02-md.jpg');
+	}
+}
+@media (min-width: 1025px){
+	.banner-slide-01 {
+		background-image: url('../images/main-slider/banner01.jpg');
+	}
+	.banner-slide-02 {
+		background-image: url('../images/main-slider/banner02.jpg');
+	}
+}
+.carousel-item {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment:  scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 .carousel-control-next,
 .carousel-control-prev {
     width: 4%;
