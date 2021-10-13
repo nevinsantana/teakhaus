@@ -13,7 +13,7 @@
 	box-shadow: 0 0 20px 0rem var(--color-beige-dark) !important;
 }
 
-.carousel-indicators button, .carousel-control-prev, .carousel-control-next {
+.carousel-indicators button, .carousel-control-prev, .carousel-control-next, .nav-item a {
 	-webkit-box-shadow: 0 0 0px 0rem transparent !important;
 	box-shadow: 0 0 0px 0rem transparent !important;
 }
@@ -87,6 +87,10 @@ nav .navbar-nav .nav-link {
 nav .navbar-nav .nav-link.active, nav .navbar-nav .nav-link:hover {
     color: var(--color-green) !important;
     text-shadow: -0.3px -0.3px 0px var(--color-green);
+}
+
+.nav-item {
+	cursor: pointer;
 }
 
 /* Carousel */

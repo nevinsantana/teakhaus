@@ -22,18 +22,6 @@ $(document).ready(function() {
 	})
 });
 
-// Navbar background color
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        $( "#navbar" ).addClass( "navbar-bg-color" );
-    } else {
-        $( "#navbar" ).removeClass( "navbar-bg-color" );
-    }
-}
-
 function normalizeSlideHeights() {
     $('.carousel').each(function(){
       var items = $('.carousel-item', this);
@@ -50,3 +38,9 @@ function normalizeSlideHeights() {
 $(window).on(
     'load resize orientationchange', 
     normalizeSlideHeights);
+
+$("#aboutArteryLink").click(function() {
+    $('html').animate({
+        scrollTop: $("#aboutArtery").offset().top
+    }, 50);
+});
