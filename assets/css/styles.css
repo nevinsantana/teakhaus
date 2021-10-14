@@ -8,10 +8,10 @@
 }
 html, body, h1, h2, h3, h4, h5, h6, p, button, a, i, span {
 	color: #444242;
-	font-family: cyrene;
+	font-family: 'Montserrat', sans-serif;
 }
 .macklin-sans-regular {
-	font-family: macklinSansRegular;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /*Navbar*/
