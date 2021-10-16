@@ -36,11 +36,17 @@ function normalizeSlideHeights() {
 }
 
 $(window).on(
-    'load resize orientationchange', 
+    'load resize orientationchange',
     normalizeSlideHeights);
 
-$("#aboutArteryLink").click(function() {
+$("#aboutArteryLink, .toAbout").click(function() {
     $('html').animate({
         scrollTop: $("#aboutArtery").offset().top
+    }, 50);
+});
+
+$(".toCollection").click(function() {
+    $('html').animate({
+        scrollTop: $("#Collection").offset().top
     }, 50);
 });
