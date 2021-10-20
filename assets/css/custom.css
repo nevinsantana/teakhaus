@@ -17,6 +17,11 @@
 	box-shadow: 0 0 20px 0rem var(--color-beige-dark) !important;
 }
 
+.no-link, .no-link:link, .no-link:visited {
+	text-decoration: none !important;
+	color: inherit !important;
+}
+
 .carousel-indicators button,
 .carousel-control-prev,
 .carousel-control-next,
